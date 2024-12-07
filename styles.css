@@ -1,0 +1,925 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    margin-bottom: 700px;
+}
+
+body {
+    background-color: #000;
+}
+
+nav {
+    background-color: #280045;
+    letter-spacing: 1px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+
+.navbar > ul > li {
+    position: relative;
+}
+
+.logo {
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-link-sobre {
+    padding: 27px 30px;
+    transition: 0.3s ease;
+}
+
+.nav-link-sobre:hover {
+    background-color: #351184;
+}
+
+.nav-link-jogos {
+    padding: 27px 30px;
+    transition: 0.3s ease;
+}
+
+.nav-link-jogos:hover {
+    background-color: #351184;
+}
+
+.nav-submenu {
+    position: absolute;
+    top: 236%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.nav-sub-link {
+    display: block;
+    padding: 13px 43px;
+    background-color: #280045;
+    transition: 0.3s;
+}
+
+.nav-sub-link:hover {
+    background-color: #351184;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.index-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 250px 0 0 0;
+    gap: 2rem;
+    color: #fff;
+}
+
+.index-titulo h1 {
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 90px;
+    letter-spacing: 10px;
+}
+
+.index-titulo h2 {
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+.imagem-fundo {
+    background-image: url(img/wallpaper\ indie.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    opacity: 0.5;
+    filter: blur(4px);
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+
+.index-introducao {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem 3rem 3rem 3rem;
+    gap: 2rem;
+}
+
+.index-introducao h2 {
+    font-size: 40px;
+}
+
+.index-introducao p {
+    border-left: solid #280045;
+    padding: 40px 50% 40px 40px;
+}
+
+.index-navegar {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem 3rem 6rem 3rem;
+    gap: 2rem;
+}
+
+.index-navegar h2{
+    font-size: 40px;
+}
+
+.index-navegar ol {
+    border-left: solid #280045;
+    padding: 40px 50% 40px 50px;
+}
+
+.index-navegar > ol > li {
+    padding: 10px 0;
+}
+
+.index-categorias {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem 3rem 6rem 3rem;
+    gap: 2rem;
+}
+
+.index-categorias h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.index-categorias-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 6rem;
+    gap: 3rem;
+}
+
+.index-categoria {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.index-categoria a {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+    transition: 0.3s ease;
+}
+
+.index-categoria a:hover {
+    color: #7f37c9;
+}
+
+.index-categoria img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(255, 123, 0, 0.8);
+}
+
+.index-categoria p {
+    text-align: center;
+    padding: 0 70px;
+}
+
+.index-sobre {
+    margin: 6rem 4rem 6rem 4rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.index-sobre h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.index-sobre > p {
+    text-align: center;
+    font-style: italic;
+    color: #6d6d6d;
+}
+
+.index-sobre ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 3rem 6rem;
+    gap: 2rem;
+}
+
+.index-sobre > ul > li {
+    display: flex;
+    flex-direction: column;    
+    max-width: 300px;
+    gap: 2rem;
+}
+
+.index-sobre-icon {
+    font-size: 50px;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(255, 123, 0, 0.8);
+    padding: 40px 0;
+}
+
+.index-sobre-texto {
+    text-align: center;
+    font-size: 20px;
+    margin: 0 2rem;
+}
+
+.index-conclusao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6rem 15rem 12rem 15rem;
+    gap: 0;
+}
+
+.index-conclusao p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.index-conclusao img {
+    width: 300px;
+}
+
+#footer_content {
+    background-color: #280045;
+    padding: 3rem 3.5rem;
+    gap: 4rem;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    list-style: none;
+}
+
+.footer-link {
+    color: rgb(171, 171, 171);
+    transition: all 0.4s;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #7f37c9;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #280045;
+    color:  #504e76;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+
+.categorias-titulo {
+    padding: 250px 0 0 0;
+    margin: 0 5rem;
+    gap: 2rem;
+    color: #fff;
+}
+
+.categorias-titulo h1 {
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 90px;
+    letter-spacing: 3px;
+    padding: 0;
+}
+
+.categorias-introducao {
+    display: flex;
+    flex-direction: column;
+    margin: -6rem 3rem 3rem 3rem;
+    gap: 2rem;
+}
+
+.categorias-introducao h2 {
+    font-size: 40px;
+}
+
+.categorias-introducao p {
+    border-left: solid #280045;
+    padding: 40px 50% 40px 40px;
+}
+
+.categorias-jogos {
+    margin: 10rem 0;
+}
+
+.categorias-jogos ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 6rem 3rem 3rem 3rem;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+.categorias-jogos li {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 3rem;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+.categorias-jogos a {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.categorias-jogos a:hover {
+    transform: scale(1.02);
+}
+
+.categorias-jogos img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0 0 15px rgba(255, 123, 0, 0.8);
+}
+
+
+.jogos-titulo {
+    display: grid;
+    padding: 200px 0 0 0;
+    margin: 0 5rem;
+    gap: 2rem;
+    color: #fff;
+}
+
+.jogos-titulo h1 {
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+
+.jogos-titulo img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 15px rgba(255, 123, 0, 0.8);
+}
+
+.jogos-titulo > div {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.jogos-titulo > div > ul {
+    display: grid;
+    gap: 20px;
+}
+
+.jogos-titulo > div > ul > li::marker {
+    color: rgba(255, 123, 0, 0.8);
+}
+
+.jogos-titulo > div > ul > li > a {
+    text-decoration: none;
+    color:  rgba(255, 123, 0, 0.8);
+    transition: 0.3s ease;
+}
+
+.jogos-titulo > div > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+.jogos-descricao-resumo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: -35rem 3rem 3rem 3rem;
+}
+
+.jogos-descricao-resumo h2 {
+    font-size: 40px;
+}
+
+.jogos-descricao-resumo p {
+    border-left: solid #280045;
+    padding: 40px 50% 40px 40px;
+}
+
+.jogos-descricao-detalhe {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 10rem 3rem 3rem 3rem;
+}
+
+.jogos-descricao-detalhe h2 {
+    font-size: 40px;
+}
+
+.jogos-descricao-detalhe ul {
+    border-left: solid #280045;
+    padding: 40px 0 40px 40px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+.jogos-descricao-detalhe > ul > li {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.jogos-descricao-detalhe h3 {
+    font-size: 25px;
+}
+
+.jogos-descricao-detalhe > ul > li > ul > li {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.jogos-descricao-detalhe h4 {
+    font-size: 15px;
+}
+
+.jogos-conclusao {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 15rem 3rem 20rem 3rem;
+}
+
+.jogos-conclusao h2 {
+    font-size: 40px;
+}
+
+.jogos-conclusao ul {
+    border-left: solid #280045;
+    padding: 40px 50% 40px 40px;
+    display: grid;
+    gap: 2rem;
+    list-style: none;
+}
+
+.jogos-conclusao li {
+    display: grid;
+    gap: 1rem;
+}
+
+.jogos-conclusao > ul > li > p {
+    border-left: solid #280045;
+    padding: 40px 0 40px 40px;
+}
+
+.jogos-conclusao p {
+    border-left: solid #280045;
+    padding: 40px 50% 40px 40px;
+}
+
+.about-titulo {
+    padding: 250px 0 0 0;
+    margin: 0 5rem;
+    gap: 2rem;
+    color: #fff;
+}
+
+.about-titulo h1 {
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 90px;
+    letter-spacing: 3px;
+}
+
+.about-introducao {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: -15rem 3rem 3rem 3rem;
+}
+
+.about-introducao h2 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.about-introducao p {
+    border-left: solid #280045;
+    padding: 40px 50% 40px 40px;
+    margin: 4rem 0 6rem 0;
+}
+
+.about-equipe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    padding: 0 15%;
+}
+
+.about-membro {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.about-membro img {
+    padding: 5px;
+    width: 14rem;
+    height: 14rem;
+    border: 1px solid rgba(255, 123, 0, 0.8);
+    border-radius: 100%;
+}
+.about-membro h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.about-membro p {
+    margin: 5px 0;
+    font-style: italic;
+    color: #6d6d6d;
+}
+
+.about-icon {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.about-membro a {
+    color: #fff;
+    background-color: #280045;
+    border-radius: 100%;
+    padding: 15px 17px;
+}
+
+@media (max-width: 1289px) {
+
+    .index-introducao p {
+        padding: 40px 0 40px 40px;
+    }
+
+    .index-navegar ol {
+        padding: 40px 0 40px 50px;
+    }
+
+    .index-categorias {
+        display: grid;
+        justify-content: center;
+    }
+
+    .index-categorias-container {
+        display: grid;
+        margin: 0;
+        gap: 5rem;
+    }
+
+    .index-categoria p {
+        text-align: center;
+        padding: 0;
+        max-width: 250px;
+    }
+
+    .index-sobre {
+        display: grid;
+        margin: 6rem 3rem 3rem 3rem;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .index-sobre ul {
+        display: grid;
+        margin: 6rem 3rem 3rem 3rem;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .index-conclusao {
+        display: grid;
+        margin: 6rem 10rem 3rem 10rem;
+        justify-content: center;
+        place-items: center;
+        gap: 5rem;
+    }
+
+    .categorias-introducao p {
+        padding: 40px 0 40px 40px;
+    }
+
+    .categorias-jogos ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-introducao p {
+        padding: 40px 0 40px 40px;
+    }
+}
+
+@media (max-width: 935px) {
+    .categorias-jogos ul{
+        display: block;
+        margin: 0;
+    }
+
+    .jogos-titulo {
+        margin: 0;
+    }
+
+    .jogos-titulo h1 {
+        margin: 0 5rem;
+    }
+
+    .jogos-titulo > div {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .jogos-titulo > div > ul {
+        padding-left: 1rem;
+        width: 20rem;
+    }
+
+    .jogos-descricao-detalhe ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .jogos-descricao-resumo p {
+        padding: 40px 0 40px 40px;
+    }
+
+    .jogos-conclusao p {
+        border-left: solid #280045;
+        padding: 40px 0 40px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: absolute;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        padding: 10px 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #280045;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-submenu {
+        position: relative;
+        display: none;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 10px 0;
+        border-left: solid;
+        border-color: #fff;
+        border-width: 1px;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-link-jogos {
+        padding: 13px 100px;
+    }
+
+    .nav-link-sobre {
+        padding: 13px 100px;
+    }
+
+    .nav-sub-link {
+        display: block;
+        padding: 13px 28px;
+        margin: 0;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .index-titulo h1 {
+        font-size: 60px;
+    }
+
+    .index-titulo h2 {
+        font-size: 15px;
+    }
+
+    .categorias-titulo {
+        margin: 0 3rem;
+    }
+
+    .jogos-titulo h1 {
+        margin: 0 3rem;
+    }
+
+    .jogos-titulo img{
+        width: 350px;
+        height: 210px;
+    }
+
+    .jogos-titulo > div > ul {
+        width: 15rem;
+    }
+
+    .about-titulo h1 {
+        font-size: 60px;
+    }
+
+    .about-introducao h2 {
+        font-size: 40px;
+    }
+
+    .about-equipe {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+@media (max-width: 510px) {
+    .index-titulo h1 {
+        font-size: 35px;
+    }
+    
+    .index-titulo h2 {
+        font-size: 9px;
+    }
+
+    .categorias-titulo {
+        margin: 0 1.5rem;
+    }
+
+    .categorias-titulo h1 {
+        font-size: 70px;
+    }
+
+    .jogos-titulo h1 {
+        font-size: 45px;
+        margin: 0 1.5rem;
+    }
+
+    .jogos-titulo img{
+        width: 300px;
+        height: 180px;
+        place-items: center;
+    }
+
+    .about-titulo h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 426px) {
+    .index-categorias h2 {
+        font-size: 40px;
+        margin: 0;
+    }
+    
+    .categorias-titulo {
+        margin: 0  0 0 1.5rem;
+    }
+
+    .categorias-titulo h1 {
+        font-size: 50px;
+    }
+
+    .jogos-titulo h1 {
+        font-size: 30px;
+    }
+
+    .jogos-titulo img{
+        width: 275px;
+        height: 165px;
+    }
+
+    .about-titulo h1 {
+        font-size: 25px;
+    }
+
+    #footer_content {
+        padding: 2rem;
+    }
+    .footer-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1px 0;
+        justify-content: start;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .index-titulo h1 {
+        font-size: 25px;
+    }
+    
+    .index-titulo h2 {
+        font-size: 7px;
+    }
+
+    .categorias-titulo h1 {
+        font-size: 30px;
+    }
+}
